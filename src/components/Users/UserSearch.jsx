@@ -1,4 +1,5 @@
-import React, { useState, useContext} from 'react'
+import React from 'react'
+import { useState, useContext} from 'react'
 import GithubContext from '../../context/github/GithubContext'
 
 
@@ -21,10 +22,10 @@ function UserSearch() {
     }
   }
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-2 lg-grid-cols-2 md-grid-cols-2 mb-8 gap-8">
+    <div className="grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 mb-8 gap-8">
       <div>
         <form onSubmit={handleSubmit}>
-          <div action="" className="form-control">
+          <div className="form-control">
             <div className="relative">
               <input
                 type="text"
@@ -33,7 +34,7 @@ function UserSearch() {
                 value={text}
                 onChange={handleChange}
               />
-              <button className="absolute top-0 right-0 rounded-l-none w-36 btn btn-lg">
+              <button type='submit' className="absolute top-0 right-0 rounded-l-none w-36 btn btn-lg">
                 Go
               </button>
             </div>
@@ -46,7 +47,7 @@ function UserSearch() {
       </div>
       )}
     </div>
-  );
+  )
 }
 
 export default UserSearch
