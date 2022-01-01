@@ -1,12 +1,12 @@
 import React from 'react'
-import UserResults from '../Users/UserResults'
+import UserSearch from '../Users/UserSearch'
 
 
 function Home() {
   return (
     <>
     {/* Search Componnet go here */}
-      <UserResults />
+      <UserSearch />
     </>
   )
 }
